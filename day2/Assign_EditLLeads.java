@@ -16,6 +16,7 @@ public class Assign_EditLLeads {
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("http://leaftaps.com/opentaps/control/main");
 		driver.manage().window().maximize();// to maximize the window
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		String title = driver.getTitle(); // to get the Title of the Application launched
 		System.out.println(title);
 		driver.findElement(By.id("username")).sendKeys("Demosalesmanager");
